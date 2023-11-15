@@ -1,39 +1,47 @@
+:root{
+    --greenFlag: #009344;
+    --whiteFlag: #ffffff;
+    --redFlag: #cf2734;
+
+    --backgroundColor: lightgray;
+    --cardBackgroundColor: #6290C8; 
+}
 body{
     margin:0;
-    background-color: gray;
+    background-color: var(--backgroundColor);
 }
-#flag{
-    justify-content: center;
+.container-fluid{
+    
     min-width: 100vw;
-    max-height: 20vh;
-    flex: auto;
-    display: flex;
-    justify-content: center;
+    height: 100px;
     border: solid 2px black;
-    max-inline-size: 20%;
-
 }
+.row{height:100%;}
+.green{background-color: var(--greenFlag);}
+.white{background-color: var(--whiteFlag);}
+.red{background-color: var(--redFlag);}
 .card{
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
     width: 33vw;
     text-align: center;
     transition: border 100ms ease-out, border-radius 300ms ease-out;
-    border: 1px solid black;
+    box-sizing: content-box;
+    background-color: var(--cardBackgroundColor);
+    border:4px solid var(--backgroundColor);
     margin: 0.8% 0.5% 0% 0%;
 }
-.card img{
-    height:250px;
-    width: 100%;
+.card > img{
+    align-self: center;
+    max-width:100%;
+    height:200px;
+    object-fit: fill;
 }
-
-#history:hover {
-    border: 4px solid rgb(13, 112, 4)
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-#culture:hover{
-    border:4px solid white;
-}
+#history:hover {border-color: var(--greenFlag);}
+#culture:hover{border-color: var(--whiteFlag);}
+#third:hover{border-color: var(--redFlag);}
 
 .content{
     display: flex;
