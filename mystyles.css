@@ -28,6 +28,7 @@ img{
 
 .card{
 
+    cursor:pointer;
     text-align: center;
     transition: border 100ms ease-out, border-radius 300ms ease-out;
     box-sizing: content-box;
