@@ -16,7 +16,8 @@ body{
     border-bottom: solid 4px black;
 }
 
-.row{height:100%;}
+.row{height:100%;
+text-align: center;}
 .green{background-color: var(--greenFlag);}
 .white{background-color: var(--whiteFlag);}
 .red{background-color: var(--redFlag);}
