@@ -16,8 +16,13 @@ body{
     border-bottom: solid 4px black;
 }
 
-.row{height:100%;
-text-align: center;}
+.row{height:100%;}
+.container-fluid > .row > .col-4{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:3.5em;
+}
 .green{background-color: var(--greenFlag);}
 .white{background-color: var(--whiteFlag);}
 .red{background-color: var(--redFlag);}
