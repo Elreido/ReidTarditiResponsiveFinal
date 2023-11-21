@@ -53,6 +53,25 @@ main{
     display:grid;
     justify-items: center;
 }
+.homecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.homecontainer .home-button {
+  position: fixed;
+  right:7.5px;
+  bottom:7.5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: #000509;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
 #history:hover {border-color: var(--greenFlag);}
 #culture:hover{border-color: var(--whiteFlag);}
 #third:hover{border-color: var(--redFlag);}
