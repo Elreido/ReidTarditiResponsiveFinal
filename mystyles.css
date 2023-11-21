@@ -288,21 +288,21 @@ main {
 
 #homebutton div:nth-child(1) {
   top: 0px;
-  left: -160px;
+  left: 160px;
 }
 
 #homebutton div:nth-child(2) {
-  top: -80.0px;
-  left: -138.56406px;
+  top: 80.0px;
+  left: 138.56406px;
 }
 
 #homebutton div:nth-child(3) {
-  top: -138.56406px;
-  left: -80.0px;
+  top: 138.56406px;
+  left: 80.0px;
 }
 
 #homebutton div:nth-child(4) {
-  top: -160px;
+  top: 160px;
   left: 0.0px;
 }
 
