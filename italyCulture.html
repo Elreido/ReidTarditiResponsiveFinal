@@ -19,11 +19,12 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
 
-    <link rel="stylesheet" href="./mystyles.css" />
+    <link rel="stylesheet" href="./mystyles.css"/>
+    <link rel="stylesheet" href="./content.css"/>
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid menubar">
             <div class="row">
                 <a href="./italyhistory.html" class="col-4 green">History</a>
                 <a href="./italyCulture.html" class="col-4 white">Culture</a>
@@ -31,4 +32,94 @@
             </div>
         </div>
     </header>
+    <div class="row contentRow">
+        <div id="group" class="d-flex flex-column col-8">
+            <div id="monthSeason" class="contentCard">
+                <div class="card-body">
+                    <h4 class="card-title text-decoration-underline">Introduction</h4>
+                    <p class="card-text">
+                        Italy's summer season, spanning from June to August, is a transformative period that envelops
+                        the country in a warm embrace.
+                        The Mediterranean climate, characterized by long, sunny days and balmy evenings, creates an
+                        atmosphere of joy and relaxation.
+                        It is a time when Italians and tourists alike revel in the pleasures of the season, from the
+                        sun-drenched coastlines to the charming inland villages.
+                        Beyond being a mere passage of time, Italy's summer is a celebration of life, love, and the
+                        multifaceted cultural heritage that distinguishes this enchanting nation.
+                    </p>
+                    <ul class="card-list">
+                        <li>Spring months are March-May</li>
+                        <li>Summer Months are June-August</li>
+                        <li>Fall months are September-November</li>
+                        <li>Winter months are December-Febuary</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentCard">
+                <div class="card-body">
+                    <h4 class="card-title text-decoration-underline">Coastal Retreats and Dolce Far Niente</h4>
+                    <p class="card-text">
+                        The allure of Italy's summer extends to its expansive coastline, where regions like the Amalfi
+                        Coast, Italian Riviera, and islands such as Sicily and Sardinia beckon sun-seekers.
+                        The Italian art of "Dolce Far Niente," or the sweetness of doing nothing, takes center stage.
+                        Beaches adorned with colorful umbrellas transform into havens for leisurely afternoons, where
+                        locals and visitors alike indulge in the pleasures of sandy shores, refreshing swims, and the
+                        sensory delights of gelato.
+                        Coastal towns come alive with vibrant markets, echoing with the sounds of merchants peddling
+                        fresh seafood and handmade crafts.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="imgCarousel col-4 float-end">
+            <div id="seasonCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                            class="d-block w-100"></div>
+                    <div class="carousel-item"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                            class="d-block w-100"></div>
+                    <div class="carousel-item"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                            class="d-block w-100"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#seasonCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#seasonCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="contentCard col-5">
+            <div class="card-body">
+                <h4 class="card-title text-decoration-underline">Festivals, Palio, and Outdoor Entertainment</h4>
+                <p class="card-text">
+                    Italy's summer is a tapestry woven with an array of festivals, cultural events, and historic celebrations.
+                    In cities like Florence, the renowned Palio, a historic horse race dating back centuries, takes center stage.
+                    Throughout the country, open-air theaters and historic piazzas become vibrant stages for music, dance, and theater performances.
+                    Summer nights resonate with the melodies of classical and contemporary tunes as Italians and tourists alike immerse themselves in the rich artistic tapestry of the nation.
+                    The streets pulse with energy, and outdoor cafes become lively hubs for socializing, laughter, and the clinking of glasses, contributing to an atmosphere that is both festive and culturally enriching.
+                </p>
+            </div>
+        </div>
+        <div class="contentCard col-5">
+            <div class="card-body">
+                <h4 class="card-title text-decoration-underline">Gastronomic Delights and Al Fresco Dining</h4>
+                <p class="card-text">
+                    The gastronomic journey in Italy reaches its zenith during the summer months. This season sees an abundance of fresh, seasonal produce gracing the tables of trattorias and restaurants across the country.
+                    The air is filled with the intoxicating aroma of basil, tomatoes, and olive oil as culinary enthusiasts embark on a sensory exploration of Italian cuisine.
+                    Al fresco dining becomes a way of life, with charming eateries spilling out onto cobblestone streets and picturesque squares.
+                    Long, leisurely meals featuring regional specialties and fine wines become a communal experience, embodying the simplicity, authenticity, and conviviality that define the essence of Italian summer dining.
+                    In essence, summer in Italy is not merely a season; it's a culinary odyssey that tantalizes the taste buds and creates indelible memories for those fortunate enough to partake in its delights.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
