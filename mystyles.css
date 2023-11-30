@@ -16,7 +16,11 @@ body {
   height: 150px;
   border-bottom: solid 4px black;
 }
-
+.menubar{
+    min-width: 100vw;
+    height: 100px;
+    border-bottom: solid 4px black;
+}
 .row {
   height: 100%;
   text-align: center;
@@ -33,7 +37,6 @@ body {
 img {
   object-fit: contain;
 }
-
 .card {
   cursor: pointer;
   text-align: center;
@@ -54,6 +57,8 @@ main {
   display: grid;
   justify-items: center;
 }
+.row{height:100%;width:100vw;}
+
 #history:hover {
   border-color: var(--greenFlag);
 }
@@ -108,6 +113,7 @@ main {
 	transform: rotate(calc(120deg / -4 * var(--index)));
 }
 
+
 .toggle{
 	position: absolute;
 	width:60px;
@@ -124,11 +130,26 @@ main {
 .hidden{
 	display:none;
 }
-
-
-@media screen and (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
+.card{
+    text-align: center;
+    transition: border 100ms ease-out, border-radius 300ms ease-out;
+    box-sizing: border-box;
+    background-color: var(--cardBackgroundColor);
+    border:4px solid var(--backgroundColor);
+    border-radius: 15px;
+    margin: 0.8% 0.5% 0% 0%;
+}
+.clickable{
+    cursor: pointer;
+}
+.card-body{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    display:grid;
     justify-items: center;
   }
   .card {
