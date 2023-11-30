@@ -19,13 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
-    <!-- Material Icons -->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    </script>
-    <!-- Material Icons -->
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> 
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    </script>
+    <!--Material Icons CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 
     <link rel="stylesheet" href="./mystyles.css" />
 </head>
@@ -64,29 +59,34 @@
         </div>
     </main>
     <footer>
-        <nav id="homebutton">
-            <input checked="checked" class="menu-toggler" type="checkbox">
-            <label for="menu-toggler"></label>
-            <ul>
-                <li class="menu-item">
-                    <a href="" class="radButton">HOME</a>
+        <div class="menuContainer">
+            <div class="toggle material-symbols-outlined">menu</div>
+                <li class="radial-item">
+                    <a class="material-symbols-outlined" href="#">home</a>
                 </li>
-                <li class="menu-item">
-                    <a href="" class="radButton">History</a>
+                <li class="radial-item">
+                    <a class="material-symbols-outlined" href="#">h</a>
                 </li>
-                <li class="menu-item">
-                    <a href="" class="radButton">Culture</a>
+                <li class="radial-item">
+                    <a class="material-symbols-outlined" href="#">c</a>
                 </li>
-                <li class="menu-item">
-                    <a href="" class="radButton">Seasons</a>
+                <li class="radial-item">
+                    <a class="material-symbols-outlined" href="#">s</a>
                 </li>
-                <li class="menu-item">
-                    <a href="" class="radButton">Feedback</a>
-                </li>
-            </ul>
         </div>
     </footer>
 
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menuContainer');
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+            if (toggle.innerHTML == "menu")
+                toggle.innerHTML = "close";
+            else
+                toggle.innerHTML = "menu";
+        }
+    </script>
 </body>
 
 </html>
