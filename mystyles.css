@@ -158,7 +158,7 @@ main{
   .card > img {
     height: 200px;
   }
-}
+
 @media screen and (min-width: 768px) {
   main {
     font-size: 1.3em;
