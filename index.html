@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
     <title>Italy Brief</title>
     <!-- Required meta tags -->
@@ -18,47 +19,106 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+    <!--Material Icons CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <link rel="stylesheet" href="./mystyles.css" />
+    <style>
+        p {
+            margin: 0;
+        }
+
+        .card-body {
+            padding: 0;
+            gap: 5px;
+            column-gap: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid menubar">
             <div class="row">
                 <a href="./italyhistory.html" class="col-4 green">History</a>
                 <a href="./italyCulture.html" class="col-4 white">Culture</a>
-                <a href="./italySeasons.html" class="col-4 red">Third</a>
+                <a href="./italySeasons.html" class="col-4 red">Seasons</a>
             </div>
         </div>
     </header>
     <main>
-        <div class="card" id="history" onclick="location.href='./italyhistory.html'">
+        <div class="card clickable" id="history" onclick="location.href='./italyhistory.html'">
             <img src="./Pictures/old italy.jfif" alt="People at an italian restaurant">
             <div class="card-body">
-                    <a href="" class="card-link">History of Italy</a>
-                    <a href="" class="card-link">Location &amp; of Italy</a>
-                </div>
-        </div>
-        <div class="card" id="culture" onclick="location.href='./italyCulture.html'">
-            <img src="./Pictures/culture.jpg" alt="People at an italian restaurant">
-            <div class="card-body">
-                <a href="" class="card-link">Culture of Italy</a>
-                <a href="" class="card-link">People of Italy</a>
+                <p class="card-text">Ancient Foundations</p>
+                <p class="card-text">Roman Empire</p>
+                <p class="card-text">The Middle Ages</p>
+                <p class="card-text">Renaissance</p>
+                <p class="card-text">Unification</p>
+                <p class="card-text">Modern Italy</p>
+                <p class="card-text">World Wars</p>
+                <p class="card-text">Fascism</p>
+                <p class="card-text">Post&dash;War Reconstruction</p>
+                <p class="card-text">Contemporary Challenges</p>
+                <p class="card-text">Cultural Resilience</p>
             </div>
         </div>
-        <div class="card" id="third" onclick="location.href='./italySeaons.html'">
+        <div class="card clickable" id="culture" onclick="location.href='./italyCulture.html'">
+            <img src="./Pictures/culture.jpg" alt="People at an italian restaurant">
+            <div class="card-body">
+                <p class="card-text">Artistic Heritage</p>
+                <p class="card-text">Renaissance Legacy</p>
+                <p class="card-text">Culinary Excellence</p>
+                <p class="card-text">Renaissance Legacy</p>
+                <p class="card-text">Culinary Excellence</p>
+                <p class="card-text">Regional Diversity</p>
+                <p class="card-text">Festivals</p>
+                <p class="card-text">Traditions</p>
+                <p class="card-text">La Dolce Vita</p>
+            </div>
+        </div>
+        <div class="card clickable" id="third" onclick="location.href='./italySeasons.html'">
             <img src="./Pictures/finalseason.jpg" alt="People at an italian restaurant">
             <div class="card-body">
-                <a href="" class="card-link">Seasons</a>
-                <a href="" class="card-link">Time Zones</a>
+                <p class="card-text">Coastal Retreats</p>
+                <p class="card-text">Dolce Far Niente</p>
+                <p class="card-text">Festivals</p>
+                <p class="card-text">Palio</p>
+                <p class="card-text">Outdoor Entertainment</p>
+                <p class="card-text">Gastronomic Delights</p>
+                <p class="card-text">Al Fresco Dining</p>
             </div>
         </div>
     </main>
     <footer>
-        <!-- place footer here -->
+        <div class="menuContainer">
+            <div class="toggle material-symbols-outlined">menu</div>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="#">home</a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="#">h</a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="#">c</a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="#">s</a>
+            </li>
+        </div>
     </footer>
 
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menuContainer');
+        toggle.onclick = function () {
+            menu.classList.toggle('active');
+            if (toggle.innerHTML == "menu")
+                toggle.innerHTML = "close";
+            else
+                toggle.innerHTML = "menu";
+        }
+    </script>
 </body>
 
 </html>
