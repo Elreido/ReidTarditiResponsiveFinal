@@ -22,6 +22,15 @@
 .imgCarousel{
     max-height: 80%;
 }
+.collapseGroup{
+    align-items: center;
+}
+.collapseButton{
+    width:800px;
+}
+.collapseContent{
+    width:800px;
+}
 @media screend and (max-width:768px){
     
 }
