@@ -18,6 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
 
     <!--Material Icons CSS-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -37,8 +44,8 @@
         </div>
     </header>
     <div class="row contentRow">
-        <div id="group" class="d-flex flex-column col-8">
-            <div id="monthSeason" class="contentCard">
+        <div class="group d-flex flex-column col-12 col-xl-7">
+            <div class="contentCard">
                 <div class="card-body">
                     <h4 class="card-title text-decoration-underline">Introduction</h4>
                     <p class="card-text">
@@ -65,8 +72,8 @@
                 </div>
             </div>
         </div>
-        <div class="imgCarousel col-4 float-end">
-            <div id="seasonCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="imgCarousel col-12 col-xl-5 float-end">
+            <div id="historyCarousel" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="0" class="active"></button>
@@ -81,17 +88,17 @@
                     <div class="carousel-item"><img src="./Pictures/finalseason.jpg" alt="Seasons"
                             class="d-block w-100"></div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#seasonCarousel"
+                <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#seasonCarousel"
+                <button class="carousel-control-next" type="button" data-bs-target="#historyCarousel"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
         </div>
-        <div class="contentCard col-5">
+        <div class="contentCard col-12 col-lg-5">
             <div class="card-body">
                 <h4 class="card-title text-decoration-underline">Location</h4>
                 <p class="card-text">
@@ -105,7 +112,7 @@
                 </p>
             </div>
         </div>
-        <div class="contentCard col-5">
+        <div class="contentCard col-12 col-lg-5">
             <div class="card-body">
                 <h4 class="card-title text-decoration-underline">Important Cities and Regions</h4>
                 <p class="card-text">
@@ -122,6 +129,15 @@
             </div>
         </div>
     </div>
+
+    <div class="funFacts d-flex justify-content-around">
+        <span class="factToolTips" data-bs-toggle="tooltip" data-bs-placement="top" title="Italy is the birthplace of the Roman Empire, one of the most influential civilizations in history">Fun Fact #1</span>
+        <span class="factToolTips" data-bs-toggle="tooltip" data-bs-placement="top" title="Naple is often considered the birthplace of pizza with thin crust and simple toppings">Fun Fact #2</span>
+        <span class="factToolTips" data-bs-toggle="tooltip" data-bs-placement="top" title="Italy is often referred to as the &OpenCurlyDoubleQuote;Boot&CloseCurlyDoubleQuote; due to its distinctive geographical shape">Fun Fact #3</span>
+        <span class="factToolTips" data-bs-toggle="tooltip" data-bs-placement="top" title="Italy was historically a collection of independent cities/states">Fun Fact #4</span>
+
+    </div>
+
     <footer>
         <div class="menuContainer">
             <div class="toggle material-symbols-outlined">menu</div>
@@ -150,6 +166,14 @@
             else
                 toggle.innerHTML = "menu";
         }
+    </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+
     </script>
 </body>
 </html>

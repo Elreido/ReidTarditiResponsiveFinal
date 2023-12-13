@@ -25,6 +25,22 @@
 
     <link rel="stylesheet" href="./content.css"/>
     <link rel="stylesheet" href="./mystyles.css"/>
+    <style>
+        .nav-pills{
+            display:none;
+        }
+        .tab-pane{
+            max-width: 500px;
+        }
+        .dropdown-toggle{
+            border-radius:15px;
+            height:fit-content;
+        }
+        .funFacts{
+            padding:10px;
+            width:fit-content;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,7 +53,7 @@
         </div>
     </header>
     <div class="row contentRow">
-        <div id="group" class="d-flex flex-column col-8">
+        <div id="group" class="d-flex flex-column col-12 col-xl-7">
             <div class="contentCard">
                 <div class="card-body">
                     <h4 class="card-title text-decoration-underline">Introduction</h4>
@@ -62,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="imgCarousel col-4 float-end">
+        <div class="imgCarousel col-12 col-xl-5 float-end">
             <div id="seasonCarousel" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
@@ -88,7 +104,7 @@
                 </button>
             </div>
         </div>
-        <div class="contentCard col-5">
+        <div class="contentCard col-12 col-lg-5">
             <div class="card-body">
                 <h4 class="card-title text-decoration-underline">National Symbols</h4>
                 <p class="card-text">
@@ -101,7 +117,7 @@
                 </p>
             </div>
         </div>
-        <div class="contentCard col-5">
+        <div class="contentCard col-12 col-lg-5">
             <div class="card-body">
                 <h4 class="card-title text-decoration-underline">National Featuress</h4>
                 <p class="card-text">
@@ -115,6 +131,28 @@
             </div>
         </div>
     </div>
+    <div class="contentCard funFacts m-auto d-flex justify-content-center dropdown-center">
+        <button class="bg-info btn dropdown-toggle" data-bs-toggle="dropdown">Fun Facts</button>
+        <ul class="nav nav-pills dropdown-menu">
+            <li class="nav-item"><a data-bs-toggle="pill" href="#funFact1" class="nav-link dropdown-item active">Fun Fact #1</a></li>
+            <li class="nav-item"><a data-bs-toggle="pill" href="#funFact2" class="nav-link dropdown-item">Fun Fact #2</a></li>
+            <li class="nav-item"><a data-bs-toggle="pill" href="#funFact3" class="nav-link dropdown-item">Fun Fact #3</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="funFact1" class="tab-pane container active">
+                <h3>Fun Fact #1</h3>
+                <p>Translating to "The Sweet Life," La Dolce Vita encapsulates the Italian way of enjoying life with an emphasis on pleasure, beauty, and savoring every moment.</p>
+            </div>
+            <div id="funFact2" class="tab-pane container fade">
+                <h3>Fun Fact #2</h3>
+                <p>The origin of Valentine's Day is often associated with Italy. St. Valentine, a Christian martyr, is said to have been buried in Rome, and the day evolved into a celebration of love and affection.</p>
+            </div>
+            <div id="funFact3" class="tab-pane container fade">
+                <h3>Fun Fact #3</h3>
+                <p>Located in Vatican City, the Sistine Chapel is home to Michelangelo's masterpiece, the ceiling frescoes. The iconic image of the Creation of Adam, with the touching fingers, is a powerful symbol of Italian Renaissance art.</p>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="menuContainer">
             <div class="toggle material-symbols-outlined">menu</div>
@@ -122,13 +160,13 @@
                 <a class="material-symbols-outlined" href="./index.html">home</a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italyhistory.html">h</a>
+                <a class="material-symbols-outlined" href="./italyhistory.html"><img class="w-100" src="./Pictures/icons/historyGeographyIcon.png" alt=""></a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italyCulture.html">c</a>
+                <a class="material-symbols-outlined" href="./italyCulture.html"><img src="./Pictures/icons/CultureAndSymbols.png" alt="" class="w-100 h-100"></a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italySeasons.html">s</a>
+                <a class="material-symbols-outlined" href="./italySeasons.html"><img src="./Pictures/icons/LifestyleIcon.png" alt="" class="w-100 h-100"></a>
             </li>
         </div>
     </footer>
