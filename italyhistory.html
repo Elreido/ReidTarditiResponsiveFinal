@@ -19,6 +19,9 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
 
+    <!--Material Icons CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <link rel="stylesheet" href="./mystyles.css"/>
     <link rel="stylesheet" href="./content.css"/>
 </head>
@@ -119,4 +122,34 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="menuContainer">
+            <div class="toggle material-symbols-outlined">menu</div>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="./index.html">home</a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="./italyhistory.html">h</a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="./italyCulture.html">c</a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="./italySeasons.html">s</a>
+            </li>
+        </div>
+    </footer>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menuContainer');
+        toggle.onclick = function () {
+            menu.classList.toggle('active');
+            if (toggle.innerHTML == "menu")
+                toggle.innerHTML = "close";
+            else
+                toggle.innerHTML = "menu";
+        }
+    </script>
 </body>
+</html>
