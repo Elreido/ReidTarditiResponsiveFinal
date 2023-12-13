@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Italy Brief</title>
+    <title>Italy Seasons</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,13 +13,14 @@
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+        </script>
 
     <link rel="stylesheet" href="./mystyles.css" />
+    <link rel="stylesheet" href="./content.css">
 </head>
 
 <body>
@@ -32,41 +33,82 @@
             </div>
         </div>
     </header>
-    <main>
-        <div id="monthseason" class="card">
-            <p>
-                Offical days of the seasons in Italy happen to be similar to Canadas
-            </p>
-            <p>
-                Spring months are March, April, & May.
-            </p>
-            <p>
-                Summer months are June, July, & Augest
-            </p>
-            <p>
-                Fall months are September, October, November
-            </p>
-            <p>
-                Winter months are December, January, Febuary
-            </p>
-            <div id="monthseason" class="card">
-                <p>
-                    Italy's countryside comes alive with vibrant colors as flowers bloom across the country. Fields of
-                    poppies, sunflowers, and other blossoms create a picturesque and enchanting scenery.
-                </p>
-                <p>
+    <div class="row contentRow">
+        <div class="group d-flex flex-column col-8">
+            <div class="contentCard">
+                <div class="card-body">
+                    <h4 class="card-title text-decoration-underline">Introduction</h4>
+                    <p class="card-text">
+                        In exploring Italy's multifaceted identity, one must embark on a journey through the intricate layers of demographics, famous personalities, and the intertwined realms of culture, climate, date, and time.
+                        Italy's demographic landscape, akin to a captivating mosaic, reflects the nation's rich historical tapestry and dynamic present. From the youth-driven vibrancy in urban hubs to the wisdom-laden serenity of rural enclaves, the demographic diversity paints a vivid portrait of Italian society.
+                        Famous people, luminaries etched into the annals of history, further enrich the narrative.
+                        Visionaries like Leonardo da Vinci, Dante Alighieri, and modern icons such as fashion maestros Giorgio Armani contribute to Italy's global influence.
+                        Beyond individuals, Italy's culture and climate, threaded seamlessly with date and time, create an immersive experience.
+                        From the allure of ancient ruins to the contemporary rhythms of bustling markets, Italy beckons with a timeless charm, inviting exploration into the interplay of tradition and innovation that defines its cultural tapestry.
+                    </p>
+                </div>
+            </div>
+            <div class="contentCard">
+                <div class="card-body">
+                    <h4 class="card-title text-decoration-underline">Culture, Climate, Date/Time</h4>
+                    <p class="card-text">
+                        Italy, a canvas painted with the brushstrokes of cultural opulence, welcomes visitors to a realm where history and contemporary flair converge.
+                        The echoes of ancient civilizations resound in Italy's culture, echoed in majestic artworks, literary masterpieces, and culinary delights that traverse generations.
+                        From the Renaissance wonders of Florence to the timeless allure of Venetian carnivals, Italy's cultural mosaic is a testament to the enduring legacy of creativity.
+                        Blessed by a Mediterranean climate, Italy's landscapes offer a sensory journey.
+                        Sun-kissed vineyards in Tuscany, the dramatic coastlines of the Amalfi, and snowy peaks of the Alps encapsulate a climatic diversity that shapes lifestyle and leisure.
+                        Italian life unfolds in a temporal dance, where the ancient Colosseum stands beside modern architecture, and the traditional passeggiata coexists with bustling urban rhythms.
+                        The date and time in Italy echo this harmonious blend, inviting exploration of a living history that transcends epochs, creating a timeless ambiance for locals and visitors alike.                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="imgCarousel col-4 float-end">
+            <div id="seasonCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                            class="d-block w-100"></div>
+                    <div class="carousel-item"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                            class="d-block w-100"></div>
+                    <div class="carousel-item"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                            class="d-block w-100"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#seasonCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#seasonCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="contentCard col-5">
+            <div class="card-body">
+                <h4 class="card-title text-decoration-underline">Demographics</h4>
+                <p class="card-text">
+                    Italy's demographic landscape is a captivating mosaic, blending echoes of history with the dynamic pulse of modernity. The nation, home to a diverse populace, embraces an interplay of generations that infuses its cities and rural areas with unique character.
+                    Urban centers pulse with the energy of youth, while historic villages embody the wisdom of age. Regional diversity further paints the demographic canvas, shaping distinct cultural identities and fostering a rich tapestry of traditions.
+                    Italy's demographic story unfolds against the backdrop of contemporary challenges, including an aging population and ongoing immigration trends.
+                    These factors intertwine, creating a societal narrative that reflects both the time-honored customs of the past and the evolving aspirations of the future.
+                    Exploring Italy's demographics unravels a narrative thread connecting the nation's historical legacy to its present-day dynamism, providing insights into the intricate layers of Italian identity.
                 </p>
             </div>
         </div>
-
+        <div class="contentCard col-5">
+            <div class="card-body">
+                <h4 class="card-title text-decoration-underline">Famous People</h4>
+                <p class="card-text">
+                    Italy's historical tapestry is woven with threads spun by visionary individuals who have left an indelible mark on the global stage. Among these luminaries is Leonardo da Vinci, a true Renaissance polymath whose genius transcended art to include scientific inquiry and engineering marvels. His masterpieces, such as the Mona Lisa and The Last Supper, remain timeless expressions of creativity and innovation. In the realm of science, Galileo Galilei revolutionized our understanding of the cosmos through his telescopic observations, laying the groundwork for modern physics and astronomy.
+                    In the political arena, Italy has produced towering figures such as Giuseppe Garibaldi, a key figure in the unification of Italy in the 19th century, and statesman Alcide De Gasperi, one of the founding fathers of the European Union. These figures not only shaped Italy's destiny but also contributed to broader global movements.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
