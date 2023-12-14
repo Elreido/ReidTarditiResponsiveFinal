@@ -47,14 +47,15 @@
         </div>
         <div class="offcanvas-body">
             <ul class="d-flex nav nav-pills nav-justified">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="./HistoryandGeography.html" class="nav-link">History and
                         Geography</a></li>
-                <li class="nav-item"><a href="./CultureandSymbols.html" class="nav-link active">Culture and
+                <li class="nav-item"><a href="./CultureandSymbols.html" class="nav-link">Culture and
                         Symbols</a></li>
                 <li class="nav-item"><a href="./EnvironementandLifestyle.html" class="nav-link">Environement
                         and Lifestyle</a></li>
-                <li class="nav-item"><a href="../index.html" class="nav-link">Feedback</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Feedback</a></li>
+
             </ul>
         </div>
     </div>
@@ -106,6 +107,38 @@
         </form>
         </div>
     </main>
+    <footer>
+        <div class="menuContainer d-none d-sm-flex">
+            <div class="toggle material-symbols-outlined">menu</div>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="../index.html">home</a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="./HistoryandGeography.html"><img class="w-100" src="../src/icons/historyGeographyIcon.png" alt=""></a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="./CultureandSymbols.html"><img src="../src/icons/CultureAndSymbols.png" alt="" class="w-100 h-100"></a>
+            </li>
+            <li class="radial-item">
+                <a class="material-symbols-outlined" href="./EnvironementandLifestyle.html"><img src="../src/icons/LifestyleIcon.png" alt="" class="w-100 h-100"></a>
+            </li>
+            <li class="radial-item">
+                <a href="#" class="material-symbols-outlined">feedback</a>
+            </li>
+        </div>
+    </footer>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menuContainer');
+        toggle.onclick = function () {
+            menu.classList.toggle('active');
+            if (toggle.innerHTML == "menu")
+                toggle.innerHTML = "close";
+            else
+                toggle.innerHTML = "menu";
+        }
+    </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
