@@ -119,6 +119,12 @@ main {
 	transition-delay: calc(0.1s * var(--index));
 	transform: rotate(0deg) translateX(125px);
 }
+.menuContainer.active > .radial-item{
+	visibility: visible;
+	transform-origin: 150px;
+	transform: rotate(calc(120deg / 5 * var(--index)));
+	
+}
 .menuContainer > .radial-item > a{
   display:flex;
   text-decoration: none;
@@ -132,14 +138,11 @@ main {
   color: var(--redFlag);
 	transform: rotate(calc(120deg / -5 * var(--index)));
 }
-.menuContainer.active{
-  z-index: 2;
-}
+
 .menuContainer.active > .radial-item{
   visibility: visible;
   transform-origin: 150px;
   transform: rotate(calc(120deg / 5 * var(--index)));
-  
 }
 
 .toggle{
