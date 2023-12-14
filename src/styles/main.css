@@ -88,6 +88,7 @@ main {
 .radial-item:nth-of-type(2){ --index:1;}
 .radial-item:nth-of-type(3){ --index:2;}
 .radial-item:nth-of-type(4){ --index:3;}
+.radial-item:nth-of-type(5){ --index:4;}
 
 
 /*Radial Menu Button CSS*/
@@ -113,7 +114,7 @@ main {
 .menuContainer.active > .radial-item{
 	visibility: visible;
 	transform-origin: 150px;
-	transform: rotate(calc(120deg / 4 * var(--index)));
+	transform: rotate(calc(120deg / 5 * var(--index)));
 	
 }
 .menuContainer > .radial-item > a{
@@ -126,7 +127,14 @@ main {
 	border-radius: 50%;
 	background-color: white;
   color: var(--redFlag);
-	transform: rotate(calc(120deg / -4 * var(--index)));
+
+	transform: rotate(calc(120deg / -5 * var(--index)));
+}
+
+.menuContainer.active > .radial-item{
+  visibility: visible;
+  transform-origin: 150px;
+  transform: rotate(calc(120deg / 5 * var(--index)));
 }
 
 
