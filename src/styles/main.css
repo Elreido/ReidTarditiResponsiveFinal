@@ -9,6 +9,9 @@
 
   --linkColour: white;
 }
+.bodyo{
+  background-color: var(--cardBackgroundColor);
+}
 body {
   margin: 0;
   margin-bottom:20px;
