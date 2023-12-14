@@ -141,7 +141,10 @@ main {
   transform-origin: 150px;
   transform: rotate(calc(120deg / 5 * var(--index)));
 }
-
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: var(--redFlag);
+  border-radius:50%;
+}
 .toggle{
 	position: absolute;
 	width:60px;
