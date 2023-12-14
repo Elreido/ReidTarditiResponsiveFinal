@@ -28,7 +28,7 @@ body {
   height: 100%;
   text-align: center;
 }
-.row > a{
+.row > .col-4 > a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +40,9 @@ body {
 }
 .white {
   background-color: var(--whiteFlag);
+
+}
+.white > *{
   color:black !important;
 }
 .red {
