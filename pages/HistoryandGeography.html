@@ -29,8 +29,8 @@
     <!--Material Icons CSS-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./mystyles.css"/>
-    <link rel="stylesheet" href="./content.css"/>
+    <link rel="stylesheet" href="../src/styles/contentPages.css"/>
+    <link rel="stylesheet" href="../src/styles/main.css"/>
 </head>
 
 <body>
@@ -42,9 +42,9 @@
         <div class="offcanvas-body">
             <ul class="d-flex nav nav-pills nav-justified">
                 <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="./italyhistory.html" class="nav-link active">History and Geography</a></li>
-                <li class="nav-item"><a href="./italyCulture.html" class="nav-link">Culture and Symbols</a></li>
-                <li class="nav-item"><a href="./italySeasons.html" class="nav-link">Environement and Lifestyle</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">History and Geography</a></li>
+                <li class="nav-item"><a href="./CultureandSymbols.html" class="nav-link">Culture and Symbols</a></li>
+                <li class="nav-item"><a href="./EnvironementandLifestyle.html" class="nav-link">Environement and Lifestyle</a></li>
                 <li class="nav-item"><a href="./index.html" class="nav-link">Feedback</a></li>
             </ul>
         </div>
@@ -52,13 +52,13 @@
     <header class="sticky-top">
         <div class="container-fluid menubar">
             <div class="row">
-                <div class="col-4 green"><a href="./italyhistory.html" class="d-none d-sm-flex h-100">History + Geograpghy</a></div>
+                <div class="col-4 green"><a href="#" class="d-none d-sm-flex h-100">History + Geograpghy</a></div>
                 <div class="col-4 white d-flex flex-column justify-content-center">
-                    <a href="./italyCulture.html" class="d-none d-sm-flex h-100">Culture and Symbols</a>
+                    <a href="./CultureandSymbols.html" class="d-none d-sm-flex h-100">Culture and Symbols</a>
                     <button class="btn btn-primary d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">Menu</button>
 
                 </div>
-                <div class="col-4 red"><a href="./italySeasons.html" class="d-none d-sm-flex h-100">Environement + Lifestyle</a></div>
+                <div class="col-4 red"><a href="./EnvironementandLifestyle.html" class="d-none d-sm-flex h-100">Environement + Lifestyle</a></div>
             </div>
         </div>
     </header>
@@ -100,11 +100,11 @@
                     <button type="button" data-bs-target="#seasonCarousel" data-bs-slide-to="2"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                    <div class="carousel-item active"><img src="../src/images/oldItaly.jfif" alt="an old picture of italy"
                             class="d-block w-100"></div>
-                    <div class="carousel-item"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                    <div class="carousel-item"><img src="../src/images/oldItaly.jfif" alt="Seasons"
                             class="d-block w-100"></div>
-                    <div class="carousel-item"><img src="./Pictures/finalseason.jpg" alt="Seasons"
+                    <div class="carousel-item"><img src="../src/images/oldItaly.jfif" alt="Seasons"
                             class="d-block w-100"></div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel"
@@ -158,19 +158,19 @@
     </div>
 
     <footer>
-        <div class="menuContainer">
+        <div class="menuContainer d-none d-sm-flex">
             <div class="toggle material-symbols-outlined">menu</div>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./index.html">home</a>
+                <a class="material-symbols-outlined" href="../index.html">home</a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italyhistory.html">h</a>
+                <a class="material-symbols-outlined" href="#"><img class="w-100" src="../src/icons/historyGeographyIcon.png" alt=""></a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italyCulture.html">c</a>
+                <a class="material-symbols-outlined" href="./CultureandSymbols.html"><img src="../src/icons/CultureAndSymbols.png" alt="" class="w-100 h-100"></a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italySeasons.html">s</a>
+                <a class="material-symbols-outlined" href="./EnvironementandLifestyle.html"><img src="../src/icons/LifestyleIcon.png" alt="" class="w-100 h-100"></a>
             </li>
         </div>
     </footer>

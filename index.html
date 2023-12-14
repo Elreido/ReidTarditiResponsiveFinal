@@ -22,7 +22,7 @@
     <!--Material Icons CSS-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./mystyles.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
     <style>
         p {
             margin: 0;
@@ -44,10 +44,10 @@
         </div>
         <div class="offcanvas-body">
             <ul class="d-flex nav nav-pills nav-justified">
-                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="./italyhistory.html" class="nav-link">History and Geography</a></li>
-                <li class="nav-item"><a href="./italyCulture.html" class="nav-link active">Culture and Symbols</a></li>
-                <li class="nav-item"><a href="./italySeasons.html" class="nav-link">Environement and Lifestyle</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./pages/HistoryandGeography.html" class="nav-link">History and Geography</a></li>
+                <li class="nav-item"><a href="./pages/CultureandSymbols.html" class="nav-link active">Culture and Symbols</a></li>
+                <li class="nav-item"><a href="./pages/EnvironementandLifestyle.html" class="nav-link">Environement and Lifestyle</a></li>
                 <li class="nav-item"><a href="./index.html" class="nav-link">Feedback</a></li>
             </ul>
         </div>
@@ -55,19 +55,19 @@
     <header class="sticky-top">
         <div class="container-fluid menubar">
             <div class="row">
-                <div class="col-4 green"><a href="./italyhistory.html" class="d-none d-sm-flex h-100">History + Geograpghy</a></div>
+                <div class="col-4 green"><a href="./pages/HistoryandGeography.html" class="d-none d-sm-flex h-100">History + Geograpghy</a></div>
                 <div class="col-4 white d-flex flex-column justify-content-center">
-                    <a href="./italyCulture.html" class="d-none d-sm-flex h-100">Culture and Symbols</a>
+                    <a href="./pages/CultureandSymbols.html" class="d-none d-sm-flex h-100">Culture and Symbols</a>
                     <button class="btn btn-primary d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">Menu</button>
 
                 </div>
-                <div class="col-4 red"><a href="./italySeasons.html" class="d-none d-sm-flex h-100">Environement + Lifestyle</a></div>
+                <div class="col-4 red"><a href="./pages/EnvironementandLifestyle.html" class="d-none d-sm-flex h-100">Environement + Lifestyle</a></div>
             </div>
         </div>
     </header>
     <main>
-        <div class="card clickable" id="history" onclick="location.href='./italyhistory.html'">
-            <img src="./Pictures/old italy.jfif" alt="People at an italian restaurant">
+        <div class="card clickable" id="history" onclick="location.href='./pages/HistoryandGeography.html'">
+            <img src="./src/images/oldItaly.jfif" alt="An old picture of italy">
             <div class="card-body">
                 <p class="card-text">Ancient Foundations</p>
                 <p class="card-text">Roman Empire</p>
@@ -82,8 +82,8 @@
                 <p class="card-text">Cultural Resilience</p>
             </div>
         </div>
-        <div class="card clickable" id="culture" onclick="location.href='./italyCulture.html'">
-            <img src="./Pictures/culture.jpg" alt="People at an italian restaurant">
+        <div class="card clickable" id="culture" onclick="location.href='./pages/CultureandSymbols.html'">
+            <img src="./src/images/italianrestaurant.jpg" alt="People at an italian restaurant">
             <div class="card-body">
                 <p class="card-text">Artistic Heritage</p>
                 <p class="card-text">Renaissance Legacy</p>
@@ -96,8 +96,8 @@
                 <p class="card-text">La Dolce Vita</p>
             </div>
         </div>
-        <div class="card clickable" id="third" onclick="location.href='./italySeasons.html'">
-            <img src="./Pictures/finalseason.jpg" alt="People at an italian restaurant">
+        <div class="card clickable" id="third" onclick="location.href='./pages/EnvironementandLifestyle.html'">
+            <img src="./src/images/threeScenes.jpg" alt="Three common sceneries from italy">
             <div class="card-body">
                 <p class="card-text">Coastal Retreats</p>
                 <p class="card-text">Dolce Far Niente</p>
@@ -113,16 +113,16 @@
         <div class="menuContainer">
             <div class="toggle material-symbols-outlined">menu</div>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./index.html">home</a>
+                <a class="material-symbols-outlined" href="#">home</a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italyhistory.html">h</a>
+                <a class="material-symbols-outlined" href="./pages/HistoryandGeography.html">h</a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italyCulture.html">c</a>
+                <a class="material-symbols-outlined" href="./pages/CultureandSymbols.html">c</a>
             </li>
             <li class="radial-item">
-                <a class="material-symbols-outlined" href="./italySeasons.html">s</a>
+                <a class="material-symbols-outlined" href="./pages/EnvironementandLifestyle.html">s</a>
             </li>
         </div>
     </footer>
