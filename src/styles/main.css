@@ -9,14 +9,12 @@
 
   --linkColour: white;
 }
-*{z-index: 1;}
 
 .bodyo{
   background-color: var(--cardBackgroundColor);
 }
 
 body {
-  z-index: 0;
   margin: 0;
   margin-bottom:20px;
   background-color: var(--backgroundColor);
@@ -100,7 +98,6 @@ main {
 
 /*Radial Menu Button CSS*/
 .menuContainer{
-  z-index:0;
     position:fixed;
 	  width:300px;
 	  height:300px;
